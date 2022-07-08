@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Roboto:wght@100;400&display=swap");
+:root {
+  --azul: #5280b4;
+  --azul-2: #1a73e8;
+  --bnco-a: #f6fbff;
+  --gris: #f2f2f2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav-bar {
+  background-color: var(--bnco-a);
+  width: 1440px;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.menu {
+  display: none;
+}
+.nav-bar ul {
+  display: flex;
+  margin-right: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar ul li {
+  margin: 10px 20px;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+}
+.nav-bar ul li a:hover {
+  color: var(--azul-2);
+}
+.logo {
+  height: auto;
+  width: 350px;
+  object-fit: cover;
+  margin-left: 150px;
+}
+.main {
+  margin: auto;
+  max-width: 1440px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-container img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.text-container {
+  width: 600px;
+  text-align: left;
+  margin-left: 50px;
+}
+.text-container h4 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 250px;
+}
+.text-container h1 {
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.p-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 50px;
+}
+.p-container p {
+  line-height: 1.5em;
+  font-weight: 200;
+}
+.direccion {
+  margin-top: 50px;
+  font-weight: 100;
+  font-size: 24px;
+  margin-bottom: 150px;
+}
+.top-wave-img-container,
+.bottom-wave-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicios {
+  max-width: 1440px;
+  height: calc(auto - 80px);
+  text-align: center;
+  background-color: var(--bnco-a);
+  margin: auto;
+}
+.servicios h1 {
+  font-family: "Roboto";
+  color: black;
+  margin-top: 60px;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.servicios-text {
+  margin-top: 20px;
+}
+.cartas-container {
+  max-width: 70%;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.carta {
+  margin: 10px;
+  background-color: var(--azul);
+  width: 350px;
+  height: 350px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--bnco-a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carta h2 {
+  margin-top: 20px;
+  font-weight: 500;
+  color: var(--bnco-a);
+  font-family: "Roboto";
+}
+.carta p {
+  color: var(--bnco-a);
+}
+.ser-button {
+  background-color: var(--azul);
+
+  border: none;
+  padding: 10px;
+
+  margin-bottom: 50px;
+  cursor: pointer;
+  border: 1px solid var(--azul);
+}
+.ser-button a {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.ser-button a:hover {
+  color: var(--azul);
+}
+.ser-button:hover {
+  background-color: var(--bnco-a);
+}
+.ubicacion {
+  width: 1440px;
+  height: auto;
+  background-color: var(--bnco-a);
+  text-align: center;
+  margin: auto;
+}
+.ubicacion h1 {
+  font-family: "Roboto";
+  color: black;
+  margin-top: 60px;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.ubi-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.mapa {
+  width: 50%;
+  height: 500px;
+}
+.footer {
+  width: 1440px;
+  background-color: #00252e;
+  height: auto;
+  margin: auto;
+  padding: 50px;
+}
+
+.form {
+  width: 800px;
+  height: 500px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+.form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form button:hover {
+  background: #78788c;
+  color: #fff;
+}
+.form div {
+  content: "Hi";
+  position: absolute;
+  bottom: 15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+span {
+  margin: 0 5px 0 15px;
+}
+@media (max-width: 1300px) {
+  .nav-bar {
+    width: 100%;
+  }
+  .nav-bar .logo {
+    margin: 0;
+    width: 250px;
+  }
+  .nav-bar ul {
+    display: none;
+  }
+  .menu-container {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+  }
+  .menu {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    flex-direction: column;
+  }
+  .left-container {
+    width: 100vw;
+  }
+  .text-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .text-container h4 {
+    margin: 50px 0 0 0;
+  }
+  .direccion {
+    margin: 0;
+  }
+  .right-container {
+    width: 100%;
+  }
+  .ubicacion {
+    width: 100vw;
+  }
+  .mapa {
+    width: 90%;
+  }
+  .footer {
+    width: 100vw;
+  }
+  .form {
+    width: 90%;
+  }
+}
